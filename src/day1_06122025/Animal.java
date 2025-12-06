@@ -41,9 +41,28 @@ public class Animal {
 		MAX_AGE = mAX_AGE;
 	}
 	
+	public void infos()
+	{
+		int total = 10;
+		System.out.println(total);
+	}
 	
 	
 	
-	// Les blocs d'initialisation de classe
+	
 	// Les blocs d'initialisation d'instance
+	
+	{
+		int x = 10;
+		System.out.println("Bloc d'initialisation d'instance");
+	}
+	// Les blocs d'initialisation de classe
+	static {
+		int x = 10;
+		System.out.println("Bloc d'initialisation de classe ");
+	}
+	
+	public void finalize() {
+		System.out.println("Destruction de l'objet");
+	}
 }
